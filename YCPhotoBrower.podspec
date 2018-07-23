@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "YCPhotoBrower"
-s.version      = "1.1.0"
+s.version      = "1.3.0"
 s.ios.deployment_target = '8.0'
 s.summary      = "a simple brower of photo."
 s.homepage     = "https://github.com/WellsYC/YCPhotoBrower"
