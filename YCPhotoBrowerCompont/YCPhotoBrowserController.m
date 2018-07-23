@@ -15,7 +15,7 @@
 
 @interface YCPhotoBrowserController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource,UICollectionViewDelegate,YCPhotoBrowserCellDelegate,AnimatorDismissedDelegate>
 {
-    NSUInteger           _imagesCount;
+    long           _imagesCount;
     YCPhotoSourceType   _photoSourceType;
 }
 @property(nonatomic,strong)NSArray                  *showImagesOrURLs;
