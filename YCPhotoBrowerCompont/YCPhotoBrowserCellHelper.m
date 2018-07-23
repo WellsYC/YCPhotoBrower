@@ -7,7 +7,7 @@
 //
 
 #import "YCPhotoBrowserCellHelper.h"
-#import <SDWebImageManager.h>
+#import<SDWebImage/UIImageView+WebCache.h>
 
 @interface YCPhotoBrowserCellHelper ()
 @property(nonatomic,strong)id                   imagesOrURL;
