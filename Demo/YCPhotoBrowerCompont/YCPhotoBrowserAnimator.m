@@ -8,7 +8,7 @@
 
 #import "YCPhotoBrowserAnimator.h"
 #import "YCPhotoBrowserConst.h"
-#import <UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 
 @interface YCPhotoBrowserAnimator(){
     BOOL         _isPresented;
