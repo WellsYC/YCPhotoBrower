@@ -8,8 +8,9 @@
 
 #import "YCPhotoBrowserCell.h"
 #import "YCCycleProgressView.h"
-#import <UIImageView+WebCache.h>
 #import "UIView+YCExtension.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
 
 @interface YCPhotoBrowserCell()<UIScrollViewDelegate>
 @property (nonatomic,strong)UIScrollView             *scrollView;
@@ -52,12 +53,13 @@
 - (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)image{
     self.progressView.hidden = NO;
     if (image)  [self setupImageViewFrame:image];
-    [self.imageView sd_setImageWithURL:url placeholderImage:image options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+    [self.imageView sd_setImageWithURL:url placeholderImage:image options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
         CGFloat progress = (CGFloat)receivedSize/(CGFloat)expectedSize;
         // 默认给它个0.01
         if (progress < 0.01) progress = 0.01;
         self.progressView.progress = progress;
-    } completed:^(UIImage *downloadImage, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+
+    } completed:^(UIImage * _Nullable downloadImage, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         // error 证明网络出错
         [self setupImageViewFrame:error?image:downloadImage];
         self.progressView.hidden = error?NO:YES;

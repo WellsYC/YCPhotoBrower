@@ -15,13 +15,13 @@
 		E53A18DC2104B8C3000BB45A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18DB2104B8C3000BB45A /* main.m */; };
 		E53A18E621055F6A000BB45A /* YCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18E421055F6A000BB45A /* YCCollectionViewCell.m */; };
 		E53A18E721055F6A000BB45A /* YCCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18E521055F6A000BB45A /* YCCollectionViewController.m */; };
-		E53A18F721056004000BB45A /* UIView+YCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18EA21056003000BB45A /* UIView+YCExtension.m */; };
 		E53A18F821056004000BB45A /* YCCycleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18EC21056003000BB45A /* YCCycleProgressView.m */; };
 		E53A18F921056004000BB45A /* YCPhotoBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18EE21056003000BB45A /* YCPhotoBrowserAnimator.m */; };
 		E53A18FA21056004000BB45A /* YCPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18F021056003000BB45A /* YCPhotoBrowserCell.m */; };
 		E53A18FB21056004000BB45A /* YCPhotoBrowserCellHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18F221056003000BB45A /* YCPhotoBrowserCellHelper.m */; };
 		E53A18FC21056004000BB45A /* YCPhotoBrowserConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18F421056003000BB45A /* YCPhotoBrowserConst.m */; };
 		E53A18FD21056004000BB45A /* YCPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18F621056003000BB45A /* YCPhotoBrowserController.m */; };
+		E53A190021057F3C000BB45A /* UIView+YCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A18FF21057F3C000BB45A /* UIView+YCExtension.m */; };
 		E896CC57AFCE89FB3D7A42CB /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D51FB1C08C109052C30050D8 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,6 @@
 		E53A18E321055F6A000BB45A /* YCCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCollectionViewCell.h; sourceTree = "<group>"; };
 		E53A18E421055F6A000BB45A /* YCCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCollectionViewCell.m; sourceTree = "<group>"; };
 		E53A18E521055F6A000BB45A /* YCCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCollectionViewController.m; sourceTree = "<group>"; };
-		E53A18E921056003000BB45A /* UIView+YCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YCExtension.h"; sourceTree = "<group>"; };
-		E53A18EA21056003000BB45A /* UIView+YCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YCExtension.m"; sourceTree = "<group>"; };
 		E53A18EB21056003000BB45A /* YCCycleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCycleProgressView.h; sourceTree = "<group>"; };
 		E53A18EC21056003000BB45A /* YCCycleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCycleProgressView.m; sourceTree = "<group>"; };
 		E53A18ED21056003000BB45A /* YCPhotoBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPhotoBrowserAnimator.h; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		E53A18F421056003000BB45A /* YCPhotoBrowserConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPhotoBrowserConst.m; sourceTree = "<group>"; };
 		E53A18F521056003000BB45A /* YCPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPhotoBrowserController.h; sourceTree = "<group>"; };
 		E53A18F621056003000BB45A /* YCPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPhotoBrowserController.m; sourceTree = "<group>"; };
+		E53A18FE21057F3C000BB45A /* UIView+YCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YCExtension.h"; sourceTree = "<group>"; };
+		E53A18FF21057F3C000BB45A /* UIView+YCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YCExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +130,8 @@
 		E53A18E821056003000BB45A /* YCPhotoBrowerCompont */ = {
 			isa = PBXGroup;
 			children = (
-				E53A18E921056003000BB45A /* UIView+YCExtension.h */,
-				E53A18EA21056003000BB45A /* UIView+YCExtension.m */,
+				E53A18FE21057F3C000BB45A /* UIView+YCExtension.h */,
+				E53A18FF21057F3C000BB45A /* UIView+YCExtension.m */,
 				E53A18EB21056003000BB45A /* YCCycleProgressView.h */,
 				E53A18EC21056003000BB45A /* YCCycleProgressView.m */,
 				E53A18ED21056003000BB45A /* YCPhotoBrowserAnimator.h */,
@@ -245,12 +245,12 @@
 				E53A18FB21056004000BB45A /* YCPhotoBrowserCellHelper.m in Sources */,
 				E53A18FA21056004000BB45A /* YCPhotoBrowserCell.m in Sources */,
 				E53A18E621055F6A000BB45A /* YCCollectionViewCell.m in Sources */,
+				E53A190021057F3C000BB45A /* UIView+YCExtension.m in Sources */,
 				E53A18D12104B8C3000BB45A /* ViewController.m in Sources */,
 				E53A18DC2104B8C3000BB45A /* main.m in Sources */,
 				E53A18E721055F6A000BB45A /* YCCollectionViewController.m in Sources */,
 				E53A18F821056004000BB45A /* YCCycleProgressView.m in Sources */,
 				E53A18FC21056004000BB45A /* YCPhotoBrowserConst.m in Sources */,
-				E53A18F721056004000BB45A /* UIView+YCExtension.m in Sources */,
 				E53A18CE2104B8C3000BB45A /* AppDelegate.m in Sources */,
 				E53A18FD21056004000BB45A /* YCPhotoBrowserController.m in Sources */,
 			);
